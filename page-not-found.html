@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> page not found | Seun O Ogundele | Visual Storyteller </title>
+    <link rel="icon" alt="company icon" type="image/png" href="assets/icon.png">
+
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Error 404 - Visit Homepage ">
+    <meta name="keywords"
+        content="photograph,photographer,headshot,portrait,stock photos,photo studio,portrait photography,photo printing,family photos, couple photos,wedding photographer,family photos,documentary, news">
+
+
+    <!-- Open Graph Meta Tags -->
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seun Ogundele | Visual Storyteller">
+    <meta property="og:description"
+        content=" I am a visual storyteller and front-end developer who likes to tells stories from my perspective with connection to where and how I grew up. My work provides documentation of culture and captures the world as it exists.">
+    <meta property="og:url" content="https://postcardwithnotes.com/" />
+    <meta property="og:image" content="assets/ogimage.png" />
+
+
+    <!-- Twitter Card -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@scriptsandtags" />
+    <meta name="twitter:title" content="Seun Ogundele | Visual Storyteller & Front-end Developer">
+    <meta name="twitter:description" content=" Seun Ogundele | Visual Storyteller based in Johannesburg, South Africa">
+    <meta name="twitter:image" content="assets/ogimage.png" />
+
+   
+
+    <!-- Style Links -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+
+</head>
+
+<body>
+
+    <!-- Back to top button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+
+    <!-- logo -->
+
+    <div class="brandtitle">
+
+        <a href='/'>
+            <img width="40px" src="images/neec nonso logo.png" class='App-logo' alt='logo' />
+        </a>
+
+    </div>
+
+    <!-- End of logo Logo -->
+
+    <!-- Error Container -->
+
+    <div class="error-container">
+        <p class="error-page-title"> 404 and corrupted memory card <br> page not found </p>
+        <img class="errorimage" src="assets/404.svg" alt="">
+        <a class="css-button-arrow--black " href="/"> return home</a>
+    </div>
+
+    <!-- End of Error Container -->
+
+<!-- Footer -->
+
+<footer class="footer-container">
+
+    <div class="footerDiv">
+
+        <p> &copy; <span class="year"></span>
+            <a class="copyright" href="bio">Seun Ogundele</a>
+        </p>
+
+        <p>made with &#9829; by
+            <a class="designerp" href="https://www.pixelsinframe.com" rel="noopener" target="blank" aria-hidden="true">
+                <span> pixelsinframe </span>
+            </a>
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- End of Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+
+
+        gsap.from(".footer-container", {
+            scrollTrigger: {
+                trigger: ".App-logo",
+                start: 50, // when the top of the trigger hits the top of the viewport
+                end: "+=300", // end after scrolling 100px beyond the start
+                // markers: true
+                scrub: 1
+            },
+            stagger: { amount: 0.5 },
+            scale: 0.5,
+            duration: 1,
+            ease: "power1.inOut"
+        });
+
+
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".error-container",
+
+
+                //   markers: true,
+
+            }
+        });
+
+        tl.from(".error-container", { x: -200, opacity: 0, duration: 1.5 })
+        tl.from(".App-logo", { y: -200, opacity: 0, duration: 1.5 })
+            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
+            .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
+
+    </script>
+
+
+</body>
+
+</html>
