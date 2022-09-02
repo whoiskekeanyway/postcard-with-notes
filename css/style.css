@@ -652,8 +652,7 @@ label {
 
 /* Print Shop */
 
-.print-shop-main {
-}
+.print-shop-main {}
 
 .print-shop-introduction {
   display: flex;
@@ -828,8 +827,6 @@ aside div {
 
 .landscape-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 100%;
 }
@@ -851,21 +848,16 @@ aside div {
   padding: 0.5rem;
 }
 
-
-
+.landscape-container.nft {
+background-color: #f8cdd8;
+gap: 1rem;
+  padding: 0.5rem;
+}
 
 
 .nft-listing-page-introduction {
-  padding: 0.25rem;
 }
 
-.nft-listing-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.nft-listing-introduction {}
 
 .nft-listing-paragraph {
   font-family: "Roboto", sans-serif;
@@ -874,20 +866,6 @@ aside div {
   max-width: 700px;
 }
 
-.nft-listing-article {
-  display: flex;
-  flex-direction: column;
-}
-
-.nft-listing-article-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 1rem;
-  max-width: 1000px;
-  padding: 0.25rem;
-}
 
 .nft-listing-links {
   text-decoration: none;

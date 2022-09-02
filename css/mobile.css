@@ -350,6 +350,10 @@
     padding: 0.5rem;
   }
 
+  .nft-listing-aside {
+    display: none;
+  }
+
 
 }
 
