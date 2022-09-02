@@ -754,13 +754,12 @@ label {
 }
 
 
-
-
 .gallery-page {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 5rem;
 }
@@ -849,14 +848,12 @@ aside div {
 }
 
 .landscape-container.nft {
-background-color: #f8cdd8;
-gap: 1rem;
+  gap: 1rem;
   padding: 0.5rem;
 }
 
 
-.nft-listing-page-introduction {
-}
+.nft-listing-page-introduction {}
 
 
 .nft-listing-paragraph {
