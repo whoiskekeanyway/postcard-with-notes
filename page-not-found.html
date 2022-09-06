@@ -32,13 +32,13 @@
     <meta name="twitter:description" content=" Seun Ogundele | Visual Storyteller based in Johannesburg, South Africa">
     <meta name="twitter:image" content="assets/ogimage.png" />
 
-   
+
 
     <!-- Style Links -->
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -46,54 +46,59 @@
 
     <!-- Back to top button -->
 
-    <button onclick="topFunction()" id="myBtn" title="Back to Top">Top</button>
+    <button class="backToTopBtn" id="myBtn" title="Back to Top">Top</button>
 
+    <header>
+    
+        <div class="brandtitle">
+        
+            <a href='/'>
+                <img width="40px" src="./assets/icon.png" class='App-logo' alt='logo' />
+            </a>
+        
+        </div>
+    
+    </header>
     <!-- logo -->
 
-    <div class="brandtitle">
-
-        <a href='/'>
-            <img width="40px" src="images/neec nonso logo.png" class='App-logo' alt='logo' />
-        </a>
-
-    </div>
 
     <!-- End of logo Logo -->
 
     <!-- Error Container -->
 
     <div class="error-container">
+
         <p class="error-page-title"> 404 and corrupted memory card <br> page not found </p>
-        <img class="errorimage" src="assets/404.svg" alt="">
+        <img class="errorimage" src="./assets/4.png" alt="">
         <a class="css-button-arrow--black " href="/"> return home</a>
+
     </div>
 
     <!-- End of Error Container -->
 
-<!-- Footer -->
 
-<footer class="footer-container">
 
-    <div class="footerDiv">
+    <!-- Footer -->
 
-        <p> &copy; <span class="year"></span>
-            <a class="copyright" href="bio">Seun Ogundele</a>
-        </p>
+    <footer class="footer-container">
 
-        <p>made with &#9829; by
-            <a class="designerp" href="https://www.pixelsinframe.com" rel="noopener" target="blank" aria-hidden="true">
-                <span> pixelsinframe </span>
-            </a>
-        </p>
+        <div class="footerDiv">
 
-    </div>
+            <p> &copy; <span class="year"></span>
+                <a class="copyright" href="bio">Seun Ogundele</a>
+            </p>
 
-</footer>
 
-<!-- End of Footer -->
+
+        </div>
+
+    </footer>
+
+    <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
     <script>
 
 
@@ -125,12 +130,44 @@
 
         tl.from(".error-container", { x: -200, opacity: 0, duration: 1.5 })
         tl.from(".App-logo", { y: -200, opacity: 0, duration: 1.5 })
-            .from(".copyright", { y: 10, opacity: 0, duration: 1.5 })
-            .from(".designer", { y: 10, opacity: 0, duration: 1.5 });
+            .from(".footerDiv", { y: 10, opacity: 0, duration: 1.5 })
+
 
     </script>
 
+    <script>
+        const footerYear = document.querySelectorAll(".year");
+        footerYear.forEach((copyright) => {
+            copyright.innerHTML = new Date().getFullYear();
+        });
 
+        // Back to top button
+
+        //Get the button
+        var backToTopBtn = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        backToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+        });
+
+    </script>
 </body>
 
 </html>
