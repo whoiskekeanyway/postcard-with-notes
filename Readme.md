@@ -1,6 +1,7 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto', sans-serif;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400&display=swap");
 
 and It excites me to touch something simple and turn it into an art
 
