@@ -855,10 +855,13 @@ aside div {
 .landscape-container.nft {
   gap: 1rem;
   padding: 0.5rem;
+
 }
 
 
-.nft-listing-page-introduction {}
+.nft-listing-page-introduction {
+  padding: 0.5rem;
+}
 
 
 .nft-listing-paragraph {
