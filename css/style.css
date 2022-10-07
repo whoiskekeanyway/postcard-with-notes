@@ -330,7 +330,10 @@ select {
   margin: 0 auto;
   height: auto;
   margin-bottom: 5rem;
-  padding: 2rem;
+}
+
+.stories-container.commision {
+  height: 100vh !important;
 }
 
 .stories-container.shop {
@@ -408,6 +411,8 @@ select {
   color: slateblue;
   letter-spacing: 1.5px;
 }
+
+
 
 .card-description::after {
   content: "";
@@ -882,6 +887,7 @@ aside div {
   flex-direction: column;
   gap: 2rem;
   height: auto;
+  padding-bottom: 5rem;
 }
 
 .project-container {
