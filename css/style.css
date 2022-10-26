@@ -235,8 +235,10 @@ select {
 
 .landing-page-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
@@ -244,6 +246,26 @@ select {
 
 .landing-page-mobile {
   display: none;
+}
+
+.landing-page-into {
+  text-align: center;
+}
+
+.landing-page-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: orangered;
+}
+
+.landing-page-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2rem;
+  max-width: 550px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .slider-image {
@@ -1075,8 +1097,8 @@ aside div {
 }
 
 .triumph-big-landscape {
-width: 90%;
-margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /* Footer */
