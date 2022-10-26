@@ -24,7 +24,7 @@ I'm a photographer with a particular focus on travel, I specialize in capturing 
 
 Self-taught photographer, born in Nigeria. Living and working between Amsterdam and Ajegunle, Lagos. Connect with him on  Instagram ,  Tumblr , or by email .
 
-If it wasn't for this photography passion and appreciation for the art of capturing moments, I would have never delved into the web industry   for a long time.
+If it wasn't for this photography passion and appreciation for the art of capturing moments, I would have never delved into the web industry for a long time.
 
 Enjoy a sweet slice of my mind pie through this online gallery, post-cardwithnotes will help you to get me out of my mind and into yours.
 
