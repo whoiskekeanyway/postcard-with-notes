@@ -196,6 +196,11 @@ select {
   padding: 0.1rem;
 }
 
+.stories-span.homepage {
+  color: slateblue !important;
+  font-size: 30px;
+}
+
 .stories-span:hover {
   transition: transform 250ms;
   color: black !important;
@@ -266,6 +271,12 @@ select {
   max-width: 550px;
   letter-spacing: 2px;
   text-align: center;
+}
+
+.landing-page-laptop {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
 }
 
 .slider-image {
@@ -375,6 +386,7 @@ select {
 .article-project-page {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .project-page-intro-title {
@@ -391,6 +403,7 @@ select {
   line-height: 1.3rem;
   max-width: 550px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .card-container {
@@ -1127,7 +1140,7 @@ footers {
 
 .copyright {
   text-decoration: none;
-  color: slateblue;
+  color: slateblue !important;
   font-weight: 700;
 }
 
