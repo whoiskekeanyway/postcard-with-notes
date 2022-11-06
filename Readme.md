@@ -34,3 +34,40 @@ Experiences > Photos > Art
 Contact me for print purchases.
 For a price guide, visit the prints page.# postcard-with-notes
 # postcard-with-notes
+
+
+
+
+
+
+
+ <!--
+        <div class="print-shop-second-page">
+
+            <section class="print-shop-second-page-introduction">
+                <h2 class="print-shop-second-page-introduction-title"> Cityscape, Landscape, Street-Photography & Travel
+                    Prints</h2>
+                <p class="print-shop-second-page-introduction-paragraph">These premium high quality prints are achieved
+                    in partnership with printing collaborators using the
+                    highest quality
+                    materials and methods available.</p>
+            </section>
+
+            <section class="print-shop-second-page-images">
+                <article class="landscape-section">
+                    <img class="print-shop-landscape-image" src="../assets/DSCF7642.jpg" alt="">
+                    <h3>Quality Prints</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Eos maxime nisi quae, deleniti
+                        temporibus <br> aut quod fugit deserunt sit at.</p>
+                </article>
+                <img class="print-shop-potrait-image" src="../assets/DSCF7641.jpg" alt="">
+                <article class="landscape-section">
+                    <img class="print-shop-landscape-image" src="../assets/DSCF7642.jpg" alt="">
+                    <h3>Quality Prints</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Eos maxime nisi quae, deleniti
+                        temporibus <br> aut quod fugit deserunt sit at.</p>
+                </article>
+            </section>
+
+        </div>
+        -->

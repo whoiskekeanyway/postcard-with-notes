@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --clr-primary-200: #40476D;
+  --clr-primary-400: orangered;
+
+  --clr-neutral-100: rgb(214, 203, 203);
+  --clr-neutral-900: #222c2a;
+
+  --ff-primary: "Roboto", sans-serif;
+  --ff-accent: 'Montserrat', sans-serif;
+}
+
+
 /* Reset margins */
 body,
 h1,
@@ -31,7 +43,7 @@ p {
 
 /* set up the body */
 body {
-  font-size: 18px;
+  font-size: 1.312rem;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -75,19 +87,19 @@ select {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f1f1f1;
-  border: 0.25em solid black;
+  background: var(--clr-primary-200);
+  border: 0.25em solid var(--clr-neutral-100);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: peru;
-  border: 0.25em solid rgb(15, 15, 15);
+  background: var(--clr-primary-400);
+  border: 0.25em solid var(--clr-neutral-900);
 }
 
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: #f1f1f1 peru;
+    scrollbar-color: var(--clr-primary-200) var(--clr-primary-400);
     scrollbar-width: thin;
   }
 }
@@ -95,7 +107,9 @@ select {
 /* Back to top button */
 
 .backToTopBtn {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
+  text-transform: uppercase;
+  font-weight: 700;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -104,7 +118,7 @@ select {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: slateblue;
+  background-color: var(--clr-primary-200);
   color: ivory;
   cursor: pointer;
   padding: 10px;
@@ -112,7 +126,7 @@ select {
 }
 
 .backToTopBtn:hover {
-  background-color: orangered;
+  background-color: var(--clr-primary-400);
 }
 
 .backToTopBtn:after {
@@ -122,7 +136,6 @@ select {
 /* Navbar */
 
 .navbar {
-  color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -140,10 +153,10 @@ select {
 }
 
 .list-item a {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   text-decoration: none;
   position: relative;
-  font-size: 18px;
+  font-size: 2vh;
   font-weight: 700;
 }
 
@@ -159,7 +172,7 @@ select {
   bottom: 0;
   width: 100%;
   height: 0.5px;
-  background: slateblue;
+  background: var(--clr-primary-200);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
@@ -180,31 +193,39 @@ select {
 }
 
 .list-item a {
-  color: black;
+  color: var(--clr-primary-200);
   text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .list-item a:hover {
-  color: orangered;
+  color: var(--clr-primary-400);
   text-transform: capitalize;
   transition: transform 250ms;
 }
 
-.stories-span {
-  color: orangered;
+.commission--span {
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  font-size: inherit;
+  color: var(--clr-primary-200);
   padding: 0.1rem;
 }
 
-.stories-span.homepage {
-  color: slateblue !important;
-  font-size: 30px;
+.stories-span {
+  font-family: var(--ff-accent);
+  font-weight: 900;
+  font-size: 2.5vh;
+  color: var(--clr-primary-400);
+  padding: 0.1rem;
 }
 
-.stories-span:hover {
+.list-item a:hover .stories-span {
   transition: transform 250ms;
-  color: black !important;
+  color: var(--clr-primary-200) !important;
+  text-transform: capitalize;
 }
+
 
 .menu {
   display: none;
@@ -214,7 +235,7 @@ select {
 .menu div {
   width: 25px;
   height: 5px;
-  background-color: orangered;
+  background-color: var(--clr-primary-400);
   margin-bottom: 4px;
   transition: all 0.3s ease;
 }
@@ -249,25 +270,24 @@ select {
   height: 100vh;
 }
 
-.landing-page-mobile {
-  display: none;
-}
+
 
 .landing-page-into {
   text-align: center;
 }
 
 .landing-page-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   font-weight: 900;
-  font-size: 22px;
-  color: orangered;
+  font-size: 2vh;
+  color: var(--clr-primary-400);
 }
 
 .landing-page-paragraph {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.2rem;
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.6vh;
+  line-height: 1.3;
   max-width: 550px;
   letter-spacing: 2px;
   text-align: center;
@@ -291,19 +311,19 @@ select {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  height: 90vh;
-  padding: 2.5rem 0;
+  min-height: 100vh;
 }
 
 .about-page {
-  max-width: 1300px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  height: fit-content;
+  padding: 2rem 0;
 }
 
 .image-section {
@@ -311,8 +331,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  max-width: 500px;
+  max-width: 600px;
   padding: 1rem;
 }
 
@@ -325,30 +344,31 @@ select {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 600px;
-  padding: 1.5rem;
+  max-width: 550px;
+  padding: 1rem;
 }
 
 .about-me-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-400);
   font-weight: 900;
-  font-size: 18px;
-  color: orangered;
+  font-size: 2.5vh;
 }
 
 .about-me-title span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 2vh;
   letter-spacing: 2px;
-  color: slateblue;
+  color: var(--clr-primary-200);
 }
 
 .biography {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ff-primary);
   padding: 0.2rem;
-  line-height: normal;
+  line-height: 1.2;
   letter-spacing: 1.5px;
+  font-size: 1.8vh;
 }
 
 
@@ -358,52 +378,41 @@ select {
 .stories-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  height: auto;
-  margin-bottom: 5rem;
-}
-
-.stories-container.commision {
-  height: 100vh !important;
-}
-
-.stories-container.shop {
-  height: 80vh;
+  min-height: 100vh;
+  padding: 2.5rem 0.5rem;
 }
 
 
-.article-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  padding: 1rem 0;
-}
-
-.article-project-page {
+.jumbotron {
   display: flex;
   flex-direction: column;
   text-align: center;
+  max-width: 40em;
+  height: auto;
+  padding: 0.3rem;
 }
 
-.project-page-intro-title {
-  font-family: "Montserrat", sans-serif;
+.jumbotron--title {
+  font-family: var(--ff-accent);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 5vh;
   letter-spacing: 1px;
-  color: orangered;
-  padding-bottom: 0.5rem;
+  color: var(--clr-primary-400);
 }
 
-.project-page-intro-paragraph {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.3rem;
+.jumbotron--paragraph {
+  font-family: var(--ff-primary);
+  line-height: 1;
+  width: 100%;
   max-width: 550px;
   letter-spacing: 2px;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .card-container {
@@ -412,16 +421,18 @@ select {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 1rem;
+  max-width: 1440px;
+  gap: 2rem;
   padding: 1rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   width: 350px;
   position: relative;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .card-image {
@@ -429,9 +440,8 @@ select {
   height: auto;
 }
 
+
 .project-title {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: inline-block;
 }
 
@@ -441,11 +451,12 @@ select {
 }
 
 .card-description {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   text-decoration: none;
   position: relative;
-  color: slateblue;
+  color: var(--clr-primary-200);
   letter-spacing: 1.5px;
+  width: fit-content;
 }
 
 
@@ -457,7 +468,7 @@ select {
   bottom: 0;
   width: 100%;
   height: 1px;
-  background: orangered;
+  color: var(--clr-primary-400);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
@@ -475,34 +486,19 @@ select {
 
 /* Potrait Page */
 
-.potrait-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  margin: 0 auto;
-  height: auto;
-  gap: 2rem;
-  padding-top: 5rem !important;
-  padding-bottom: 2.5rem !important;
-  padding: 1rem;
-}
-
-
 .potraits-images {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   height: auto;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 2rem;
+  padding: 5rem 0;
 }
 
 .potrait-image {
-  border-radius: 5px;
   width: 32%;
-  height: auto;
+  max-width: 350px;
 }
 
 
@@ -513,11 +509,9 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
   height: 100vh;
   position: relative;
   padding: 1rem;
-  margin-bottom: 2.5rem;
 }
 
 .contact-container::after {
@@ -543,12 +537,12 @@ select {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-width: 620px;
+  max-width: 800px;
   margin: 0 auto;
   gap: 1rem;
   background-color: rgb(234, 225, 225);
-  padding: 2rem;
   opacity: 0.9;
+  padding: 0.5rem;
 
 }
 
@@ -557,33 +551,27 @@ select {
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  max-width: 30em;
 }
 
 .contact-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  color: orangered;
+  font-family: var(--ff-accent);
+  font-size: 3vh;
+  font-weight: 700;
+  color: var(--clr-primary-400);
   padding-bottom: 0.5rem;
+  line-height: 1;
 }
 
 .contact-paragraph {
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 16px;
-}
-
-/* Print Shop Page */
-
-.print-shop-link {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  color: steelblue;
-  text-decoration: wavy;
+  font-family: var(--ff-accent) !important;
+  font-size: 1.8vh;
+  padding: 0.5rem;
 }
 
 
 .form-container {
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -601,7 +589,7 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid slateblue;
+  border: 1px solid var(--clr-primary-200);
   border-radius: 5px;
   box-sizing: border-box;
   margin-top: 6px;
@@ -617,8 +605,8 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none !important;
-  border-color: orangered;
-  box-shadow: 0 0 10px slateblue;
+  border-color: var(--clr-primary-400);
+  box-shadow: 0 0 10px var(--clr-primary-200);
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -635,7 +623,7 @@ input[type="number"] {
 label {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: steelblue;
+  color: var(--clr-primary-200);
   font-weight: 700;
 
 }
@@ -662,7 +650,7 @@ label {
   overflow: hidden;
   border-radius: 5px;
   border: none;
-  background-color: orangered;
+  background-color: var(--clr-primary-400);
 }
 
 #subbtn:hover {
@@ -694,6 +682,16 @@ label {
 
 /* Print Shop */
 
+/* Print Shop Page */
+
+.print-shop-link {
+  font-family: var(--ff-accent);
+  font-weight: 700;
+  font-size: 1.8vh;
+  color: var(--clr-primary-200);
+  text-decoration: none;
+}
+
 .print-shop-main {}
 
 .print-shop-introduction {
@@ -701,7 +699,7 @@ label {
   flex-direction: column;
   gap: 1rem;
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 
 .print-shop-words {
@@ -716,24 +714,30 @@ label {
 }
 
 .print-shop-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 3vh;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
 
 .print-shop-paragraph {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+  font-size: 2vh;
 }
 
 .darkroom-link {
-  color: slateblue;
+  font-family: var(--ff-accent);
+  color: rgb(0, 0, 0);
   text-decoration: none;
+  font-size: 2.2vh;
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  letter-spacing: 2px;
 }
+
+
 
 
 .print-shop-introduction::after {
@@ -753,46 +757,6 @@ label {
   width: 100%;
 }
 
-.print-shop-second-page {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  max-width: 1440px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-
-}
-
-.print-shop-second-page-introduction {
-  display: flex;
-  flex-direction: column;
-}
-
-.print-shop-second-page-introduction-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: 1px;
-}
-
-.print-shop-second-page-introduction-paragraph {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
-}
-
-
-.print-shop-second-page-images {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-content: center;
-  background-color: slateblue;
-  padding: 1rem;
-}
 
 
 .gallery-page {
@@ -803,6 +767,7 @@ label {
   max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 5rem;
+
 }
 
 aside {
@@ -810,7 +775,6 @@ aside {
   height: fit-content;
   display: block;
   padding: 1rem;
-  padding-top: 5rem;
 }
 
 aside div {
@@ -818,8 +782,7 @@ aside div {
   position: -webkit-sticky;
   top: 0;
   height: auto;
-  background-color: lightgray;
-  padding: 1rem;
+  background-color: rgb(250, 250, 252);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -829,22 +792,41 @@ aside div {
 
 .print-type-name,
 .gallery-page-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   font-weight: 700;
-  font-size: 18px;
-  color: steelblue;
+  font-size: 2vh;
+  color: var(--clr-primary-200);
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.gallery-page-notes {
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: 1.5vh;
+  padding: 0 1rem;
+  letter-spacing: 3px;
 }
 
 .gallery-page-paragraph {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2vh;
+  padding: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 3px;
 }
 
 .gallery-page-paragraph a {
-  color: steelblue;
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-200);
   text-decoration: none;
+  font-size: 2vh;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
+
+
 
 
 
@@ -876,11 +858,6 @@ aside div {
   padding: 0.5rem;
 }
 
-.print-shop-images-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 
 .print-shop-images {
   width: 50%;
@@ -901,18 +878,18 @@ aside div {
 
 
 .nft-listing-paragraph {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 2vh;
   max-width: 700px;
 }
 
 
 .nft-listing-links {
   text-decoration: none;
-  color: orangered;
+  color: var(--clr-primary-400);
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   font-weight: 700;
 }
 
@@ -949,9 +926,9 @@ aside div {
 }
 
 .projects-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--ff-accent);
   font-weight: 700;
-  color: orangered;
+  color: var(--clr-primary-400);
   position: relative;
   width: fit-content;
   cursor: pointer;
@@ -964,7 +941,7 @@ aside div {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: slateblue;
+  background: var(--clr-primary-200);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 250ms ease-in;
@@ -981,7 +958,7 @@ aside div {
 }
 
 .project-paragraphs {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ff-primary);
   max-width: 800px;
   margin: 0 auto;
   height: auto;
@@ -1121,52 +1098,42 @@ footer {
   margin: 0 auto;
   height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-footers {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  padding: 1rem;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
-  width: 100%;
-}
-
-.copyright {
-  text-decoration: none;
-  color: slateblue !important;
+  font-size: 1.4vh;
+  font-family: var(--ff-accent);
   font-weight: 700;
 }
 
 
-.year {
-  color: orangered;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
 
 .copyright {
-  text-align: center;
-  padding: 3px;
+  text-decoration: none;
+  color: var(--clr-primary-200) !important;
+  font-weight: 700;
 }
 
 .copyright a {
   text-decoration: none;
+  color: var(--clr-primary-400) !important;
 }
 
+.year {
+  color: var(--clr-primary-400);
+
+}
+
+
 .designer {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
   font-weight: 900;
   letter-spacing: 1px;
-  color: orangered;
-  font-weight: 900;
+  color: var(--clr-primary-200);
+}
+
+.website {
+  text-decoration: none;
+  color: var(--clr-primary-400);
 }
 
 
@@ -1203,13 +1170,13 @@ footers {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 900;
-  color: orangered;
+  color: var(--clr-primary-400);
 }
 
 .css-button-arrow--black {
   min-width: 130px;
   height: 40px;
-  color: orangered;
+  color: var(--clr-primary-400);
   font-size: 20px;
   padding: 10px 15px;
   font-weight: bold;
