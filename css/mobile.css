@@ -55,121 +55,13 @@
 
 @media screen and (min-width: 320px) and (max-width: 820px) {
   .landing-page-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  .landing-page-laptop {
-    display: none;
-  }
-
-  .landing-page-mobile {
-    display: block;
-  }
-
-  .landing-page-mobile img {
-    padding: 1rem;
-
-  }
-
-  .backToTopBtn {
-    bottom: 20px;
-    right: 30px;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 0px;
+    justify-content: flex-start;
+    padding-top: 5rem;
   }
 }
 
-/* Bio Page */
-
-@media screen and (min-width: 320px) and (max-width: 820px) {
-  .about-container {
-    height: auto;
-    padding-bottom: 2.5rem;
-  }
-
-  .about-page {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .biography-section {
-    max-width: 100%;
-    padding: 1rem;
-  }
-
-  .biography {
-    font-family: "Roboto", sans-serif;
-    line-height: 1.5rem;
-    width: 100%;
-    color: black;
-    font-size: 15px;
-  }
-
-  .image-section img {
-    width: 100%;
-    height: auto;
-  }
-
-
-}
 
 /* Stories Page */
-
-@media screen and (min-width: 320px) and (max-width: 820px) {
-
-  .stories-container {
-    height: auto;
-    padding: 0.5rem;
-  }
-
-  .article-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    padding-left: 1rem;
-  }
-
-  .article-project-page {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem !important;
-  }
-
-  .project-page-intro-paragraph {
-    font-family: "Roboto", sans-serif;
-    width: 100%;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    gap: 1rem;
-    padding: 0.5rem;
-  }
-
-  .card {
-    max-width: 100%;
-  }
-
-  .quote-container-p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 2rem;
-  }
-}
 
 @media screen and (min-width: 100px) and (max-width: 700px) {
 
@@ -194,75 +86,10 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1008px) {
-  .potrait-image {
-    border-radius: 5px;
-    width: 47%;
-    height: auto;
-
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  .potrait-image {
-    border-radius: 5px;
-    width: 100%;
-    height: auto;
-
-  }
-}
-
-/* Contact Page */
-
-@media screen and (min-width: 320px) and (max-width: 820px) {
-  .contact-main {
-    width: 100%;
-    padding: 0.5rem;
-
-  }
-
-  .contact-container {
-    padding-top: 2rem;
-    height: auto;
-  }
-
-
-
-  .form-container {
-    width: 100%;
-  }
-
-  .contact {
-    width: 100%;
-
-  }
-
-  form {
-    width: 100%;
-  }
-
-
-}
-
 /* Project Page */
 
 @media screen and (min-width: 320px) and (max-width: 820px) {
-  .main-container {
-    padding-top: 0.1rem;
-  }
-
-  .stories-container.commision {
-    height: auto !important;
-  }
-
-  .carousel {
-    display: none;
-  }
-
-  .main-exhibition {
-    display: none;
-  }
-
+ 
   .card-container {
     display: flex;
     flex-direction: row;
@@ -275,36 +102,6 @@
     padding: 0.5rem;
   }
 
-  .project-paragraphs {
-    font-size: 16px;
-    line-height: 1.25rem;
-  }
-
-  .project-container {
-    padding: 0.5rem;
-    gap: 1rem;
-  }
-
-  .projects-title {
-    margin-left: 0rem;
-  }
-
-  .mobile {
-    display: none;
-    padding: 10px;
-    margin-bottom: 2rem;
-  }
-
-  .mobile img {
-    margin-bottom: 1rem;
-  }
-
-  .article-project-page {
-    width: 100%;
-    gap: 1rem;
-    padding: 1.5rem;
-    padding-top: 4rem;
-  }
 }
 
 
@@ -364,30 +161,7 @@
 
 }
 
-@media screen and (max-width: 768px) {
-  .gallery-page-images article img {
-    width: 100%;
-    padding: 0.5rem;
-    max-width: 360px;
-  }
 
-  .backToTopBtn {
-    font-family: "Montserrat", sans-serif;
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 14px;
-    border: none;
-    outline: none;
-    background-color: slateblue;
-    color: ivory;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 0px;
-  }
-}
 
 @media screen and (min-width: 320px) and (max-width: 820px) {
   .error-container {
@@ -400,18 +174,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 820px) {
+  .stories-images-container img {
+    padding: 0.25rem;
+    width: 100%;
 
-  .carousel-image-potrait {
-    width: 40%;
   }
 
-}
-
-/* Footer */
-
-@media screen and (min-width: 320px) and (max-width: 820px) {
-  footer {
-    position: initial;
-    padding: 0px 5px 0px 5px;
-  }
 }
