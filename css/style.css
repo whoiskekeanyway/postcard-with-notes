@@ -301,8 +301,8 @@ select {
 }
 
 .slider-image {
-  width: 1000px;
   height: auto;
+  width: 1000px;
   padding: 1rem;
 }
 
