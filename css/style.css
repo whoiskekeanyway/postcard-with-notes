@@ -292,6 +292,7 @@ select {
   max-width: 550px;
   letter-spacing: 2px;
   text-align: center;
+  
 }
 
 .landing-page-laptop {
@@ -301,6 +302,7 @@ select {
 }
 
 .slider-image {
+  height: auto;
   width: 1000px;
   padding: 1rem;
 }
