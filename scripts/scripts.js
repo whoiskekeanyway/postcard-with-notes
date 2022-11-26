@@ -41,4 +41,14 @@ backToTopBtn.addEventListener("click", function () {
   });
 });
 
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".icon",
+    //   markers: true,
+  },
+});
 
+tl.from(".icon", { x: -200, opacity: 0, duration: 1 })
+  .from(".nav-list", { y: -50, opacity: 0, duration: 0.8 })
+  .from(".extra", { x: 100, opacity: 0, duration: 1 })
+  .from("footer", { y: 10, opacity: 0, duration: 1.5 });
