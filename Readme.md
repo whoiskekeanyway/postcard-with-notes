@@ -41,33 +41,78 @@ For a price guide, visit the prints page.# postcard-with-notes
 
 
 
- <!--
-        <div class="print-shop-second-page">
+ // array of image URLs
+const images = [
+  'https://example.com/image1.jpg',
+  'https://example.com/image2.jpg',
+  'https://example.com/image3.jpg',
+];
 
-            <section class="print-shop-second-page-introduction">
-                <h2 class="print-shop-second-page-introduction-title"> Cityscape, Landscape, Street-Photography & Travel
-                    Prints</h2>
-                <p class="print-shop-second-page-introduction-paragraph">These premium high quality prints are achieved
-                    in partnership with printing collaborators using the
-                    highest quality
-                    materials and methods available.</p>
-            </section>
+// select the element to change the background image of
+const element = document.querySelector('#some-element');
 
-            <section class="print-shop-second-page-images">
-                <article class="landscape-section">
-                    <img class="print-shop-landscape-image" src="../assets/DSCF7642.jpg" alt="">
-                    <h3>Quality Prints</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Eos maxime nisi quae, deleniti
-                        temporibus <br> aut quod fugit deserunt sit at.</p>
-                </article>
-                <img class="print-shop-potrait-image" src="../assets/DSCF7641.jpg" alt="">
-                <article class="landscape-section">
-                    <img class="print-shop-landscape-image" src="../assets/DSCF7642.jpg" alt="">
-                    <h3>Quality Prints</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Eos maxime nisi quae, deleniti
-                        temporibus <br> aut quod fugit deserunt sit at.</p>
-                </article>
-            </section>
+// set a random background image
+function setRandomBackground() {
+  // get a random index from the images array
+  const randomIndex = Math.floor(Math.random() * images.length);
 
-        </div>
-        -->
+  // get the image URL at the random index
+  const randomImage = images[randomIndex];
+
+  // set the background image of the element to the random image
+  element.style.backgroundImage = `url(${randomImage})`;
+}
+
+// call the function to set the initial background image
+setRandomBackground();
+
+
+// array of image URLs
+const images = [
+  'https://example.com/image1.jpg',
+  'https://example.com/image2.jpg',
+  'https://example.com/image3.jpg',
+];
+
+// select the element to change the background image of
+const element = document.querySelector('#some-element');
+
+// set a random background image with a fade transition
+function setRandomBackground() {
+  // get a random index from the images array
+  const randomIndex = Math.floor(Math.random() * images.length);
+
+  // get the image URL at the random index
+  const randomImage = images[randomIndex];
+
+  // set the background image of the element to the random image
+  element.style.backgroundImage = `url(${randomImage})`;
+
+  // fade in the new background image
+  element.style.transition = 'opacity 1s';
+  element.style.opacity = 0;
+  setTimeout(() => {
+    element.style.opacity = 1;
+  }, 50);
+}
+
+// call the function to set the initial background image
+setRandomBackground();
+
+
+#some-element {
+  // set the size and position of the element
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  // override the background-image and transition properties set by the JavaScript code
+  background-image: none !important;
+  transition: none !important;
+
+  // other styles
+  background-position: center center;
+  background-size: cover;
+}

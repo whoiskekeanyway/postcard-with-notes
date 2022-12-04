@@ -4,12 +4,18 @@ var time = 3000; // Time Between Switch
 
 //  Image List
 
-images[0] = "../assets/homepage/1.webp";
-images[1] = "../assets/homepage/2.webp";
-images[2] = "../assets/homepage/3.webp";
-images[3] = "../assets/homepage/4.webp";
-images[4] = "../assets/homepage/5.webp";
-images[5] = "../assets/homepage/6.webp";
+images[0] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991144/postcardwithnotes/homepage/6_vtqbpn.webp";
+images[1] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991143/postcardwithnotes/homepage/5_kvoot9.webp";
+images[2] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991143/postcardwithnotes/homepage/4_uwnymx.webp";
+images[3] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/3_zdiefm.webp";
+images[4] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/2_j6f5cl.webp";
+images[5] =
+  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp";
 
 // Change Image
 function changeImg() {
