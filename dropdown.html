@@ -19,6 +19,51 @@
             display: block;
         }
     </style>
+    <style>
+        nav {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+nav ol {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ol li {
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+nav ol li:before {
+  content: ">";
+  margin: 0 10px;
+}
+
+nav ol li:first-child:before {
+  content: "";
+  margin: 0;
+}
+
+nav a {
+  color: #999;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+  color: #333;
+}
+
+    </style>
 </head>
 
 <body>
@@ -31,6 +76,16 @@
             <a href="#">Contact</a>
         </div>
     </div>
+
+    <nav aria-label="Breadcrumb">
+        <ol>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Bakery</a></li>
+            <li>Bread</li>
+        </ol>
+    </nav>
+
 
 </body>
 

@@ -79,6 +79,10 @@
       display: none;
     }
 
+        .potrait-image {
+          width: 100%;
+        }
+
 }
 
 /* Potrait Page */
