@@ -367,7 +367,7 @@ select {
 }
 
 
-.jumbotron {
+.stories-words-container {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -376,7 +376,7 @@ select {
   padding: 0.3rem;
 }
 
-.jumbotron--title {
+.stories-words-container--title {
   font-family: var(--ff-accent);
   font-weight: 700;
   font-size: 5vh;
@@ -384,7 +384,7 @@ select {
   color: var(--clr-primary-400);
 }
 
-.jumbotron--paragraph {
+.stories-words-container--paragraph {
   font-family: var(--ff-primary);
   line-height: 1;
   width: 100%;
