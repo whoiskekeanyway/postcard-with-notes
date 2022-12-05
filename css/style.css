@@ -242,12 +242,12 @@ select {
 .landing-page-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
+  padding: 5rem 0.5rem;
 }
 
 
