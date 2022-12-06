@@ -494,7 +494,7 @@ select {
 
 .contact-container::after {
   content: "";
-  background: url(../assets/homepage/1.webp);
+  background: url("https: //res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -726,7 +726,7 @@ label {
 
 .print-shop-introduction::after {
   content: "";
-  background: url(../assets/print-shop/intro-to-print-shop.webp);
+  background: url("https: //res.cloudinary.com/da93q413z/image/upload/v1669991578/postcardwithnotes/printshop/intro-to-print-shop_ckclqf.webp");
   opacity: 1;
   top: 0;
   left: 0;
