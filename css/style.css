@@ -494,7 +494,7 @@ select {
 
 .contact-container::after {
   content: "";
-  background: url("https: //res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp");
+  background: url("https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
