@@ -305,22 +305,34 @@ select {
   padding: 1rem;
 }
 
-@media screen and (min-width: 1920px) {
-.landing-page-container {
-    width: 100%;
-    background-color: aqua;
-    height: auto;
+.landing-page-hd {
+  display: none;
 }
-  .landing-page-laptop {
+
+@media screen and (min-width: 1920px) {
+  .landing-page-container {
     width: 100%;
-    max-width: 2000px;
     height: auto;
+    padding-top: 2rem;
+      max-width: 2500px;
+        margin: 0 auto;
   }
 
-  .slider-image {
+  .landing-page-laptop {
+    display: none;
+  }
+
+  .landing-page-hd {
+    width: 100%;
+    display: block;
+    background-color: aquamarine;
+  }
+
+  .slider-image-hd {
     height: auto;
-    width: 2000px;
     padding: 1rem;
+    width: 100%;
+    width: 4000px;
   }
 }
 
