@@ -314,8 +314,8 @@ select {
     width: 100%;
     height: auto;
     padding-top: 2rem;
-      max-width: 2500px;
-        margin: 0 auto;
+    max-width: 2500px;
+    margin: 0 auto;
   }
 
   .landing-page-laptop {
@@ -325,7 +325,6 @@ select {
   .landing-page-hd {
     width: 100%;
     display: block;
-    background-color: aquamarine;
   }
 
   .slider-image-hd {
@@ -336,19 +335,8 @@ select {
   }
 }
 
-@media screen and (min-width: 3840px) {
-  .landing-page-laptop {
-    width: 100%;
-    height: auto;
-  }
 
-  .slider-image {
-    height: auto;
-    width: 3810px;
-    padding: 1rem;
-  }
 
-}
 
 /* About Page */
 
