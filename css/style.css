@@ -237,6 +237,25 @@ select {
   height: 30px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 120px;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  flex-direction: column;
+}
+
 /* Landing Page */
 
 .landing-page-container {
@@ -286,6 +305,38 @@ select {
   padding: 1rem;
 }
 
+@media screen and (min-width: 1920px) {
+.landing-page-container {
+    width: 3810px;
+    background-color: aqua;
+}
+  .landing-page-laptop {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+
+  .slider-image {
+    height: auto;
+    width: 1000px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  .landing-page-laptop {
+    width: 100%;
+    height: auto;
+  }
+
+  .slider-image {
+    height: auto;
+    width: 3810px;
+    padding: 1rem;
+  }
+
+}
+
 /* About Page */
 
 .about-container {
@@ -300,7 +351,7 @@ select {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   max-width: 1440px;
   margin: 0 auto;
   padding: 1rem 0.5rem;
@@ -438,8 +489,6 @@ select {
   width: fit-content;
 }
 
-
-
 .card-description::after {
   content: "";
   position: absolute;
@@ -527,6 +576,7 @@ select {
 .details-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 600px;
 
 }
@@ -598,11 +648,13 @@ textarea:focus {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
   -webkit-appearance: none;
   margin: 0;
 }
 
 input[type="number"] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -679,8 +731,6 @@ label {
   text-decoration: none;
 }
 
-.print-shop-main {}
-
 .print-shop-introduction {
   display: flex;
   flex-direction: column;
@@ -742,7 +792,6 @@ label {
 }
 
 
-
 .gallery-page {
   display: flex;
   flex-direction: row;
@@ -801,8 +850,6 @@ aside div {
   letter-spacing: 3px;
 }
 
-
-
 .gallery-page-images {
   padding: 1rem;
   display: flex;
@@ -843,9 +890,6 @@ aside div {
   height: auto;
   padding: 1rem;
 }
-
-
-.nft-listing-page-introduction {}
 
 
 .nft-listing-links {
@@ -927,7 +971,6 @@ aside div {
   padding: 0.5rem;
 }
 
-
 .stories-item-container {
   display: flex;
   flex-direction: column;
@@ -950,15 +993,12 @@ aside div {
 .stories-images {
   padding: 0.25rem;
   width: 45%;
-
 }
 
 .walls-from-home-images {
   padding: 0.25rem;
   width: 80%;
-
 }
-
 
 .stories-item-container section {
   display: flex;
@@ -997,13 +1037,10 @@ footer {
   padding: 0.50rem 0;
 }
 
-
-
 .copyright {
   text-decoration: none;
   color: var(--clr-primary-200) !important;
   font-family: var(--ff-primary);
-
 }
 
 .copyright a {
@@ -1017,13 +1054,10 @@ footer {
 
 }
 
-
 .designer {
   font-weight: 700;
   color: var(--clr-primary-200);
 }
-
-
 
 
 /* Error Page */
@@ -1102,23 +1136,4 @@ footer {
   top: 0;
   left: -20px;
   transition: 0.4s;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  min-width: 120px;
-  text-align: center;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  flex-direction: column;
 }
