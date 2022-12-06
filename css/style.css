@@ -307,18 +307,19 @@ select {
 
 @media screen and (min-width: 1920px) {
 .landing-page-container {
-    width: 3810px;
+    width: 100%;
     background-color: aqua;
+    height: auto;
 }
   .landing-page-laptop {
     width: 100%;
-    max-width: 1000px;
+    max-width: 2000px;
     height: auto;
   }
 
   .slider-image {
     height: auto;
-    width: 1000px;
+    width: 2000px;
     padding: 1rem;
   }
 }
