@@ -14,7 +14,7 @@
     max-width: 20%;
     position: absolute;
     top: 15px;
-    left: 10px;
+    left: 20px;
   }
 
   .icon {
@@ -25,7 +25,7 @@
   .menu {
     display: block;
     position: absolute;
-    right: 15px;
+    right: 20px;
     top: 30px;
   }
 
@@ -53,7 +53,13 @@
 
 /* Landing Page */
 
-@media screen and (min-width: 100px) and (max-width: 820px) {
+@media screen and (min-width: 100px) and (max-width: 520px) {
+  .landing-page-container {
+    padding-bottom: 5rem !important;
+    height: auto;
+    padding-top: 1rem !important;
+  }
+
   .landing-page-mobile {
     display: block;
   }
@@ -103,10 +109,10 @@
     gap: 1.5rem;
   }
 
-    .stories-container {
-      height: auto;
-      padding: 0;
-    }
+  .stories-container {
+    height: auto;
+    padding: 0;
+  }
 }
 
 /* Project Page */
