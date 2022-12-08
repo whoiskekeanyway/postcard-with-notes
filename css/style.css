@@ -262,17 +262,19 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2.5rem;
   max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
-  padding: 5rem 0.5rem;
+  padding: 2rem 1rem;
 }
 
 
 
 .landing-page-into {
   text-align: center;
+  background-color: #b78d8d;
+  padding: 1.5rem 0.25rem;
 }
 
 .landing-page-title {
