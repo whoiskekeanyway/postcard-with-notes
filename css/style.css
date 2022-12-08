@@ -265,7 +265,7 @@ select {
   gap: 2.5rem;
   max-width: 1440px;
   margin: 0 auto;
-  height: 100vh;
+  height: auto;
   padding: 2rem 1rem;
 }
 
