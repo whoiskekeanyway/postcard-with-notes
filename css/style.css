@@ -229,7 +229,7 @@ select {
 .extra {
   display: flex;
   flex-direction: row;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .extra-icon-image {
@@ -309,6 +309,10 @@ select {
   display: none;
 }
 
+.landing-page-mobile {
+  display: none;
+}
+
 @media screen and (min-width: 1920px) {
   .landing-page-container {
     width: 100%;
@@ -332,6 +336,10 @@ select {
     padding: 1rem;
     width: 100%;
     width: 4000px;
+  }
+
+  .landing-page-mobile {
+    display: none;
   }
 }
 
@@ -1034,8 +1042,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 14px;
   padding: 0.50rem 0;
+  line-height: 1.2;
 }
 
 .copyright {

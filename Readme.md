@@ -38,81 +38,10 @@ For a price guide, visit the prints page.# postcard-with-notes
 
 
 
+As a documentary photographer, Seun is passionate about telling stories through his unique perspective, drawing on his experiences and cultural background. With a keen eye for detail and a love for patterns and shapes, Seun captures the world around him as it exists, documenting everyday life and culture.
 
+Seun is an active member of the African Photojournalism Database (APJD), where he can connect with other photographers and share his work. As a member of this community, Seun is constantly inspired by the stories and perspectives of his fellow photographers.
 
+Seun is organised, detail-oriented, and self-motivated, with a strong focus on delivering high-quality results. He is also reliable, resourceful, and always open to learning and exploring new creative avenues. With a background in front-end development, Seun has a solid technical understanding of photography and is constantly seeking new ways to improve his work.
 
- // array of image URLs
-const images = [
-  'https://example.com/image1.jpg',
-  'https://example.com/image2.jpg',
-  'https://example.com/image3.jpg',
-];
-
-// select the element to change the background image of
-const element = document.querySelector('#some-element');
-
-// set a random background image
-function setRandomBackground() {
-  // get a random index from the images array
-  const randomIndex = Math.floor(Math.random() * images.length);
-
-  // get the image URL at the random index
-  const randomImage = images[randomIndex];
-
-  // set the background image of the element to the random image
-  element.style.backgroundImage = `url(${randomImage})`;
-}
-
-// call the function to set the initial background image
-setRandomBackground();
-
-
-// array of image URLs
-const images = [
-  'https://example.com/image1.jpg',
-  'https://example.com/image2.jpg',
-  'https://example.com/image3.jpg',
-];
-
-// select the element to change the background image of
-const element = document.querySelector('#some-element');
-
-// set a random background image with a fade transition
-function setRandomBackground() {
-  // get a random index from the images array
-  const randomIndex = Math.floor(Math.random() * images.length);
-
-  // get the image URL at the random index
-  const randomImage = images[randomIndex];
-
-  // set the background image of the element to the random image
-  element.style.backgroundImage = `url(${randomImage})`;
-
-  // fade in the new background image
-  element.style.transition = 'opacity 1s';
-  element.style.opacity = 0;
-  setTimeout(() => {
-    element.style.opacity = 1;
-  }, 50);
-}
-
-// call the function to set the initial background image
-setRandomBackground();
-
-
-#some-element {
-  // set the size and position of the element
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  // override the background-image and transition properties set by the JavaScript code
-  background-image: none !important;
-  transition: none !important;
-
-  // other styles
-  background-position: center center;
-  background-size: cover;
-}
+Seun is drawn to photography because it allows him to reveal hidden perspectives and bring fresh insights to familiar subjects. His passion for understanding the world around him drives him to create beautiful, thought-provoking projects.
