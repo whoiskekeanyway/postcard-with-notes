@@ -149,7 +149,8 @@ select {
 
 .list-item {
   display: inline-block;
-  padding: 1.5rem 0.90rem;;
+  padding: 1.5rem 0.90rem;
+  ;
 }
 
 .list-item a {
@@ -1065,6 +1066,9 @@ footer {
 .designer {
   font-weight: 700;
   color: var(--clr-primary-200);
+  text-align: center;
+  padding-left: 0.30rem;
+  letter-spacing: 0.20px;
 }
 
 
