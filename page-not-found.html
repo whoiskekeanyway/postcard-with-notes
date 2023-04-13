@@ -88,11 +88,13 @@
 
     <div class="error-container">
 
-       <div>
-        <p class="error-page-title"> 404 and corrupted memory card </p>
-        <p class="error-page-title not-found">page not found</p>
-       </div>
-        <img class="errorimage" src="https://res.cloudinary.com/da93q413z/image/upload/v1670490820/postcardwithnotes/8_krjpnk.png" alt="404 - page not found">
+        <div>
+            <p class="error-page-title"> 404 and corrupted memory card </p>
+            <p class="error-page-title not-found">page not found</p>
+        </div>
+        <img class="errorimage"
+            src="https://res.cloudinary.com/da93q413z/image/upload/v1670490820/postcardwithnotes/8_krjpnk.png"
+            alt="404 - page not found">
         <a class="css-button-arrow--black " href="/"> return home</a>
 
     </div>
@@ -103,18 +105,19 @@
 
     <!-- Footer -->
 
-    <footer class="footer-container">
-
-        <p class="copyright"> &copy; <span class="year"> </span> <a class="copyright" href="/">Seun OG </a> | All rights
-            reserved | <br><span class="designer">built with rage by
-                <a class="website" target="_blank" rel="noopener noreferrer" href="https://www.pixelsinframe.com/">
+    <footer class="copyright-container">
+        <h2 id="trigger">copyright</h2>
+        <div id="element-to-show">
+            <p> &copy; <span class="year"> </span>
+                <span class="agency-name">Seun OG</span> | All rights reserved |
+                made with rage by
+                <a class="designer" target="_blank" rel="noopener noreferrer" href="https://www.pixelsinframe.com/">
                     pixelsinframe.com
                 </a>
-            </span>
-        </p>
-
+    
+            </p>
+        </div>
     </footer>
-
     <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -122,6 +125,23 @@
 
 
     <script>
+
+        function showOnHover(trigger, element) {
+                trigger.onmouseover = function () {
+                    element.style.display = "block";
+                    trigger.style.display = "none";
+                };
+                element.onmouseout = function () {
+                    element.style.display = "none";
+                    trigger.style.display = "block";
+                };
+            }
+
+            let trigger = document.getElementById("trigger");
+            let element = document.getElementById("element-to-show");
+            showOnHover(trigger, element);
+
+            
         const footerYear = document.querySelectorAll(".year");
         footerYear.forEach((copyright) => {
             copyright.innerHTML = new Date().getFullYear();
