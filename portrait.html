@@ -56,6 +56,10 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -129,8 +133,11 @@
                         alt='extra-icon-image' />
                 </a>
 
-
-
+                <a rel='noreferrer noopener' target='_blank' href='https://www.behance.net/pixelsinframeagency'>
+                    <img class="extra-icon-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1681447274/postcardwithnotes/icons/logo-behance_husal4.svg"
+                        alt='extra-icon-image' />
+                </a>
 
 
             </div>
@@ -139,14 +146,15 @@
 
     </header>
 
-    <div class="stories-container">
+    <div class="portrait-container">
 
-        <div class="stories-words-container">
+        <div class="intro-to-portrait">
 
-            <h1 class="projects-title">portrait</h1>
+            <h1 class="">Portrait</h1>
 
-            <p class="project-paragraphs">
-                " A true portrait should, today and a hundred years from today, the Testimony of how this person looked and what kind of
+            <p class="">
+                " A true portrait should, today and a hundred years from today, the Testimony of how this person looked
+                and what kind of
                 human being he was. " <br> <br>
 
                 - Philippe Halsman
@@ -154,50 +162,107 @@
 
         </div>
 
+        <style>
+            .portrait-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+                max-width: 1440px;
+                height: auto;
+                padding: 5rem 1rem;
 
-        <section class="portrait-images">
+            }
+
+            .portrait-container div {
+                flex: 1;
+                max-width: 500px;
+            }
+
+            .intro-to-portrait {
+
+                text-align: end;
+            }
+
+            .carousel-outer {
+                position: relative;
+            }
 
 
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/1_vtx0nc.webp"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/4_ew0say.webp"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/1_vtx0nc.webp"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681218548/postcardwithnotes/potraits/DSCF6492_gpxgpp.jpg"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681218549/postcardwithnotes/potraits/DSCF6491_evs1nz.jpg"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681218552/postcardwithnotes/potraits/DSCF6493_dfm33z.jpg"
-                alt="Potrait photos">
+            .carousel-container {
 
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/5_dxkmef.webp"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1669991186/postcardwithnotes/potraits/2_x7rka5.webp"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681203264/postcardwithnotes/potraits/DSCF5380_yn3jda.jpg"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681203264/postcardwithnotes/potraits/DSCF5380_yn3jda.jpg"
-                alt="Potrait photos">
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681218776/postcardwithnotes/potraits/DSCF5377-2_n5nkky.jpg"
-                alt="Potrait photos">
+                overflow: hidden;
+                margin: 0 auto;
+                background-color: aqua;
+                max-width: 350px !important;
 
-            <img class="potrait-image"
-                src="https://res.cloudinary.com/da93q413z/image/upload/v1681218776/postcardwithnotes/potraits/DSCF5377-3_hqyfi7.jpg"
-                alt="Potrait photos">
 
-        </section>
+            }
+
+            .carousel {
+                display: flex;
+                width: 100%;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .carousel-image {
+                height: 550px;
+                width: auto;
+                /* Width will adjust according to aspect ratio */
+                flex-shrink: 0;
+            }
+
+            .carousel-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                color: steelblue;
+                border: none;
+                padding: 15px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+
+            #carousel-prev {
+                left: 10px;
+            }
+
+            #carousel-next {
+                right: 10px;
+            }
+        </style>
+
+        <div class="carousel-outer">
+
+            <div class="carousel-container">
+
+                <div id="carousel" class="carousel">
+
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1687364715/postcardwithnotes/potraits/Bintil_Photoshoot-26_yqpsph.jpg">
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1681218776/postcardwithnotes/potraits/DSCF5377-3_hqyfi7.jpg">
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/1_vtx0nc.webp">
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1681218549/postcardwithnotes/potraits/DSCF6491_evs1nz.jpg">
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/5_dxkmef.webp">
+                    <img class="carousel-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1669991185/postcardwithnotes/potraits/4_ew0say.webp">
+
+
+
+
+                    <!-- add more images as needed -->
+                </div>
+
+                <button id="carousel-prev" class="carousel-button"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="carousel-next" class="carousel-button"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
 
     </div>
 
@@ -221,6 +286,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="scripts/scripts.js"></script>
+    <script>
+        let currentIndex = 0;
+
+        const images = Array.from(document.querySelectorAll('.carousel-image'));
+        const carousel = document.getElementById('carousel');
+
+        document.getElementById('carousel-prev').addEventListener('click', function () {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            }
+            updateCarousel();
+        });
+
+        document.getElementById('carousel-next').addEventListener('click', function () {
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+            updateCarousel();
+        });
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = 'translateX(' + offset + '%)';
+        }
+
+        document.addEventListener('keydown', function (event) {
+            // If the left arrow key is pressed
+            if (event.key === 'ArrowLeft') {
+                // Decrement the current index. If the index goes below 0, set it to the last image in the array.
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = images.length - 1;
+                }
+
+                // Update the position of the carousel to reflect the new current index.
+                updateCarousel();
+            }
+
+            // If the right arrow key is pressed
+            else if (event.key === 'ArrowRight') {
+                // Increment the current index. If the index goes above the number of images, set it to the first image.
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0;
+                }
+
+                // Update the position of the carousel to reflect the new current index.
+                updateCarousel();
+            }
+        });
+        // Existing JavaScript code...
+
+        // This function is for handling the keyboard events
+        // ...
+
+        // Function to go to next image
+        function goToNextImage() {
+            // Increment the current index. If the index goes above the number of images, set it to the first image.
+            currentIndex++;
+            if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            // Update the position of the carousel to reflect the new current index.
+            updateCarousel();
+        }
+
+        // Add an event listener to the Next button. When this button is clicked, the goToNextImage function will be called.
+        document.getElementById('carousel-next').addEventListener('click', goToNextImage);
+
+        // Set an interval to go to the next image every 3 seconds
+        setInterval(goToNextImage, 3000);
+
+
+    </script>
 </body>
 
 </html>

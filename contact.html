@@ -127,8 +127,11 @@
                         alt='extra-icon-image' />
                 </a>
 
-
-
+                <a rel='noreferrer noopener' target='_blank' href='https://www.behance.net/pixelsinframeagency'>
+                    <img class="extra-icon-image"
+                        src="https://res.cloudinary.com/da93q413z/image/upload/v1681447274/postcardwithnotes/icons/logo-behance_husal4.svg"
+                        alt='extra-icon-image' />
+                </a>
 
 
             </div>
@@ -139,60 +142,57 @@
 
     <!-- Contact page -->
 
-    <div class="contact-container">
+    <div class="portrait-container">
 
-        <div class="contact-main">
+        <div class="">
 
-            <section class="details-container">
+            <div class="contact">
+                <h1 class="contact-title">Contact me for sales, commissions or general enquiries.</h1>
 
-                <div class="contact">
-                    <h1 class="contact-title">Contact me for sales, commissions or general enquiries.</h1>
+                <p class="contact-paragraph">To get an idea of prices for framed and unframed prints, check out the
+                    guide
+                    price list in the
+                    <a class="print-shop-link" href="./shop/printshop">Print Shop</a>
+                </p>
+                <p class="contact-paragraph">If you're interested in buying, or need further information and or a
+                    quote on alternative sizes and finishing options,
+                    drop me a line here.</p>
+            </div>
 
-                    <p class="contact-paragraph">To get an idea of prices for framed and unframed prints, check out the
-                        guide
-                        price list in the
-                        <a class="print-shop-link" href="./shop/printshop">Print Shop</a>
-                    </p>
-                    <p class="contact-paragraph">If you're interested in buying, or need further information and / or a
-                        quote on alternative sizes and finishing options,
-                        drop me a line here.</p>
-                </div>
+        </div>
 
-            </section>
+        <div class="">
 
-            <section class="form-container">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success/">
 
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success/">
+                <p class="hidden">
+                    <label>
+                        Don`t fill this out if you`re human: <input name="bot-field" />
+                    </label>
+                </p>
 
-                    <p class="hidden">
-                        <label>
-                            Don`t fill this out if you`re human: <input name="bot-field" />
-                        </label>
-                    </p>
-
-                    <label for="fname">Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <label for="lname">Email Address</label>
-                    <input type="email" name="email" placeholder="email@example.com" required>
-                    <label for="lname">Subject</label>
-                    <input type="email" name="email" placeholder="eg. Print Enquiries" required>
-                    <label class="howcanwehelplabel" for="subject">Message?</label>
-                    <textarea id="subject" name="subject" placeholder="Write your message here" required>
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Email Address</label>
+                <input type="email" name="email" placeholder="email@example.com" required>
+                <label for="lname">Subject</label>
+                <input type="email" name="email" placeholder="eg. Print Enquiries" required>
+                <label class="howcanwehelplabel" for="subject">Message?</label>
+                <textarea id="subject" name="subject" placeholder="Write your message here" required>
                     </textarea>
 
 
-                    <button id="subbtn" class="btn-primary" type="submit">Send</button>
+                <button id="subbtn" class="btn-primary" type="submit">Send</button>
 
 
-                </form>
-
-            </section>
+            </form>
 
         </div>
 
     </div>
 
     <!-- Footer -->
+
     <footer class="copyright-container">
         <h2 id="trigger">copyright</h2>
         <div id="element-to-show">
