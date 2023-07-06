@@ -10,12 +10,12 @@ images[1] =
   "https://res.cloudinary.com/da93q413z/image/upload/v1669991143/postcardwithnotes/homepage/5_kvoot9.webp";
 images[2] =
   "https://res.cloudinary.com/da93q413z/image/upload/v1669991143/postcardwithnotes/homepage/4_uwnymx.webp";
-images[3] =
-  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/3_zdiefm.webp";
-images[4] =
-  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/2_j6f5cl.webp";
-images[5] =
-  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp";
+//images[3] =
+ // "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/3_zdiefm.webp";
+//images[4] =
+//  "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/2_j6f5cl.webp";
+//images[5] =
+ // "https://res.cloudinary.com/da93q413z/image/upload/v1669991142/postcardwithnotes/homepage/1_wj5tlc.webp";
 
 // Change Image
 function changeImg() {
