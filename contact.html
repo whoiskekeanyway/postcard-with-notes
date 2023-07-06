@@ -11,12 +11,7 @@
 
     <link rel="icon" type="image/png"
         href="https://res.cloudinary.com/da93q413z/image/upload/v1669991881/postcardwithnotes/icons/icon_tmurma.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-    <link rel="manifest" href="assets/icons/site.webmanifest">
-    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#ff5400">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
     <meta name="theme-color" content="#ff5400">
@@ -146,22 +141,22 @@
 
         <div class="">
 
-            <div class="contact">
-                <h1 class="contact-title">Contact me for sales, commissions or general enquiries.</h1>
 
-                <p class="contact-paragraph">To get an idea of prices for framed and unframed prints, check out the
-                    guide
-                    price list in the
-                    <a class="print-shop-link" href="./shop/printshop">Print Shop</a>
-                </p>
-                <p class="contact-paragraph">If you're interested in buying, or need further information and or a
-                    quote on alternative sizes and finishing options,
-                    drop me a line here.</p>
-            </div>
+            <h1 class="">Contact me for sales <span>commissions or general enquiries.</span></h1> <br>
+     
 
+            <p class="">To get an idea of prices for framed and unframed prints, <br> check out the
+                guide
+                price list in the
+                <a class="print-shop-link" href="./shop/printshop">Print Shop</a>
+            </p> <br>
+            <p class="">If you're interested in buying, or need further information and or a
+                quote on alternative sizes and finishing options,
+                drop me a line here.
+            </p>
         </div>
 
-        <div class="">
+        <div class="form-container">
 
             <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success/">
 
@@ -172,14 +167,15 @@
                 </p>
 
                 <label for="fname">Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" placeholder="Your Name....">
                 <label for="lname">Email Address</label>
                 <input type="email" name="email" placeholder="email@example.com" required>
                 <label for="lname">Subject</label>
                 <input type="email" name="email" placeholder="eg. Print Enquiries" required>
                 <label class="howcanwehelplabel" for="subject">Message?</label>
-                <textarea id="subject" name="subject" placeholder="Write your message here" required>
-                    </textarea>
+                <textarea placeholder="Write your message here" rows="4" cols="50" wrap=physical id="subject"
+                    name="subject" required>
+                </textarea>
 
 
                 <button id="subbtn" class="btn-primary" type="submit">Send</button>
@@ -193,17 +189,19 @@
 
     <!-- Footer -->
 
-    <footer class="copyright-container">
-        <h2 id="trigger">copyright</h2>
-        <div id="element-to-show">
-            <p> &copy; <span class="year"> </span>
-                <span class="agency-name">Seun OG</span> | All rights reserved |
-                made with rage by
-                <a class="designer" target="_blank" rel="noopener noreferrer" href="https://www.pixelsinframe.com/">
-                    pixelsinframe.com
-                </a>
+    <footer>
+        <div class="copyright-container">
+            <h2 id="trigger">copyright</h2>
+            <div id="element-to-show">
+                <p> &copy; <span class="year"> </span>
+                    <span class="agency-name">Seun OG</span> | All rights reserved |
+                    made with rage by
+                    <a class="designer" target="_blank" rel="noopener noreferrer" href="https://www.pixelsinframe.com/">
+                        pixelsinframe.com
+                    </a>
 
-            </p>
+                </p>
+            </div>
         </div>
     </footer>
 
