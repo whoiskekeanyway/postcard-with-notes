@@ -59,9 +59,7 @@
 
 @media screen and (min-width: 100px) and (max-width: 520px) {
   .landing-page-container {
-    padding-bottom: 5rem !important;
     height: auto;
-    padding-top: 1rem !important;
   }
 
   .landing-page-mobile {
@@ -70,6 +68,20 @@
 
   .landing-page-laptop {
     display: none;
+  }
+
+    .landing-page-into {
+      padding: 0%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 520px) {
+  .about-container {
+    height: auto;
+  }
+
+  .about-page {
+    gap: 2rem;
   }
 }
 
@@ -105,7 +117,7 @@
   .portrait-container {
     flex-direction: column !important;
     height: auto;
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
@@ -199,8 +211,36 @@
     padding-bottom: 3rem;
   }
 
-    .about-page {
-      flex-direction: column;
-    }
+  .about-page {
+    flex-direction: column;
+  }
+
+  footer {
+
+    justify-content: start;
+    align-items: start;
+
+  }
+
+  #element-to-show {
+    padding: 0;
+    max-width: 300px;
+
+  }
+
+  #trigger {
+    padding-left: 9px;
+
+  }
+
+  .backToTopBtn {
+    bottom: 10px;
+    right: 30px;
+  }
+
+
+  .carousel-button {
+    display: none;
+  }
 
 }
